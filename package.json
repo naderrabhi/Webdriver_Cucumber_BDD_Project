@@ -1,0 +1,24 @@
+{
+  "name": "webdriverio_cucumber_bdd_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "test": "npx cucumber-js --format json:reports/report.json && node reports/generate-report.js",
+    "report": "node reports/generate-report.js",
+    "test:report": "cucumber-js && npm run report",
+    "test:parallel": "cucumber-js --parallel 4",
+    "clean": "rimraf reports || true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "chai": "^6.0.1",
+    "chromedriver": "^139.0.3",
+    "cucumber-html-reporter": "^7.2.0",
+    "geckodriver": "^6.0.1",
+    "selenium-webdriver": "^4.35.0"
+  }
+}

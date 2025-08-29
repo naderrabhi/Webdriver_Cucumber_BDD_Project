@@ -1,0 +1,343 @@
+[
+  {
+    "description": "As a shopper on SauceDemo\nI want to log in\nSo that I can see the products page",
+    "elements": [
+      {
+        "description": "",
+        "id": "saucedemo-login;valid-login-with-standard-user",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Valid login with standard user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1371867400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the SauceDemo login page",
+            "match": {
+              "location": "step-definitions\\login.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1023018999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I login with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\login.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 332299399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see the products page",
+            "match": {
+              "location": "step-definitions\\login.steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43874299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 782400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "saucedemo-login;invalid-login-attempts",
+        "keyword": "Scenario Outline",
+        "line": 23,
+        "name": "Invalid login attempts",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 248399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the SauceDemo login page",
+            "match": {
+              "location": "step-definitions\\login.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79025499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I login with username \"locked_out_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\login.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 231169699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see error \"Epic sadface: Sorry, this user has been locked out.\"",
+            "match": {
+              "location": "step-definitions\\login.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20681399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 127799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "saucedemo-login;invalid-login-attempts",
+        "keyword": "Scenario Outline",
+        "line": 24,
+        "name": "Invalid login attempts",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 82400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the SauceDemo login page",
+            "match": {
+              "location": "step-definitions\\login.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64849000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I login with username \"problem_user\" and password \"wrong_pass\"",
+            "match": {
+              "location": "step-definitions\\login.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 218485699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see error \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "location": "step-definitions\\login.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12216900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 56599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "saucedemo-login;invalid-login-attempts",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "Invalid login attempts",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 47099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the SauceDemo login page",
+            "match": {
+              "location": "step-definitions\\login.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40880900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I login with username \"\" and password \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\login.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 202852899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see error \"Epic sadface: Username is required\"",
+            "match": {
+              "location": "step-definitions\\login.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13549399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 46199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "saucedemo-login;invalid-login-attempts",
+        "keyword": "Scenario Outline",
+        "line": 26,
+        "name": "Invalid login attempts",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 36399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the SauceDemo login page",
+            "match": {
+              "location": "step-definitions\\login.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36185800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I login with username \"standard_user\" and password \"\"",
+            "match": {
+              "location": "step-definitions\\login.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 194803799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see error \"Epic sadface: Password is required\"",
+            "match": {
+              "location": "step-definitions\\login.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15436099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 120799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "saucedemo-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "SauceDemo Login",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]
