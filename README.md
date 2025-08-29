@@ -70,5 +70,4 @@ Page Object Model (POM): A design pattern used in the pages directory to create 
 
 🛡️ Known Issues
 Chrome Password Manager Pop-up: This framework includes configurations to handle the Chrome password manager pop-up that may appear during login. The support/hooks.js or a similar file is configured with Chrome options to prevent these interruptions and ensure stable test execution.
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
 
